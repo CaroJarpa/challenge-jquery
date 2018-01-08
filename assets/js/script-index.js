@@ -42,4 +42,7 @@ function renderActivity(recipe) {
 	
 }
 
+	$('.js-back').remove();
+
+
 
