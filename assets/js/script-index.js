@@ -10,8 +10,26 @@ $(document).ready( function(){
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
+
+/*Etapa 3:En el archivo ​ script-index.js ​ tienes disponible una variable llamada ​ recipesArray ​ ,
+es un arreglo que contiene objetos que representan recetas de cocina, también
+tienes declaradas 4 funciones.
+En esta etapa tienes que completar la función ​ renderHighlightedRecipes ​ .
+1. Dentro de esta función tienes que recorrer el arreglo ​ recipesArray ​ (que
+está como parámetro).
+2. Verificar en cada objeto del arreglo si tiene la propiedad ​ highlighted ​ en
+true.
+3. Si la condición del paso 2 se cumple, manda a llamar la
+función ​ renderRecipe ​ pasándole como parámetro el objeto que cumplió
+la condición.*/
+
 function renderHighlightedRecipes(recipesArray) {
-	console.log('Recipes: ', recipesArray);
+  console.log('Recipes: ', recipesArray);
+  for(var i=0; recipesArray.length; i++){
+    recipesArray[i];
+    if (recipesArray[i]['highlighted']===true){}
+      renderRecipe();
+  }
 }
 
 /*
@@ -61,4 +79,6 @@ true.
 3. Si la condición del paso 2 se cumple, manda a llamar la
 función ​ renderRecipe ​ pasándole como parámetro el objeto que cumplió
 la condición.*/
+
+
 
