@@ -41,8 +41,24 @@ function renderActivities(activitiesArray) {
 function renderActivity(recipe) {
 	
 }
-
+/*Etapa 1: al cargar index.html que no este el icono de la flecha*/
 	$('.js-back').remove();
 
+/*Etapa 2:agregar texto "nuevas recetas" al parrafo*/
 
+$(function(printNews){
+  $('.callout-news p').append('Nuevas recetas');
+});
+
+/*Etapa 3:En el archivo ​ script-index.js ​ tienes disponible una variable llamada ​ recipesArray ​ ,
+es un arreglo que contiene objetos que representan recetas de cocina, también
+tienes declaradas 4 funciones.
+En esta etapa tienes que completar la función ​ renderHighlightedRecipes ​ .
+1. Dentro de esta función tienes que recorrer el arreglo ​ recipesArray ​ (que
+está como parámetro).
+2. Verificar en cada objeto del arreglo si tiene la propiedad ​ highlighted ​ en
+true.
+3. Si la condición del paso 2 se cumple, manda a llamar la
+función ​ renderRecipe ​ pasándole como parámetro el objeto que cumplió
+la condición.*/
 
